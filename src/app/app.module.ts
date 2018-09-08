@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule,PLATFORM_ID, APP_ID, Inject} from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 import { AppComponent } from './app.component';
 
@@ -10,6 +11,7 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ngxuniversal' }),
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
